@@ -1,0 +1,42 @@
+﻿#voteContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 6em;
+  flex-grow: 1;
+  padding-right: 0.5em;
+  font-weight: bold;
+  color:#333333;
+}
+
+button{
+  font-weight:900;
+  color:white;
+  display:flex;
+  align-content:center;
+  align-items:center;
+  justify-content:center;
+  font-size:10pt;
+}
+
+#upButton {
+  background-color: #40ff70;
+  border-color: #40ff70;
+}
+
+#upButton:active {
+  background-color: #30ef60;
+  border-color: #30ef60;
+}
+
+#downButton {
+  background-color: #ff6080;
+  border-color: #ff6080;
+}
+
+#downButton:active {
+  background-color: #ef5070;
+  border-color: #ef5070;
+}

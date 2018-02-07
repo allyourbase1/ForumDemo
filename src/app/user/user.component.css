@@ -1,0 +1,40 @@
+﻿#userName{
+  background-color: #50ee80;
+  padding: 0em 0.5em 0em 0.5em;
+  color:white;
+  border:solid;
+  border-color:#50ee80;
+  border-radius:4px;
+  flex-grow:0;
+}
+#userContainer{
+}
+
+#userPopupContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  background-color: white;
+  margin: -1.43em 0 0 -0.01em;
+  overflow: hidden;
+  color: #666666;
+  border: solid;
+  border-color: #50ee80;
+  border-radius: 4px;
+  border-width:1px;
+  box-shadow:4px 4px rgba(79, 237, 127, 0.7);
+}
+
+#about{
+  flex-grow:1;
+  font-size: 10pt;
+  margin-bottom: 0.6em;
+  margin-left: 0.6em;
+}
+
+#meta {
+  font-size: 8pt;
+  margin-top: 0.75em;
+  margin-left: 0.75em;
+}

@@ -1,0 +1,14 @@
+﻿<div id="topicContainer" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+  <h4>{{topics[selectedTopic].name}}</h4>
+  <div id="topicPopupContainer" *ngIf = "isOpen === 'active'" [@isActive]="isOpen" (mouseenter)="mouseBack()">
+    <h4 id="topicPopupTitle">{{topics[selectedTopic].name}}</h4>
+    <div id="topicPopupContent">
+        <span id="header">
+          <button id="topicLink">{{topics[selectedTopic].name}}</button> 
+           &nbsp; Created {{topics[selectedTopic].createdOn | lowercase}} by &nbsp;
+          <app-user [selectedUser]="topics[selectedTopic].createdBy" [onTopic]="true" id="topicUser"></app-user>.
+        </span>
+        <p id="topicAbout">{{topics[selectedTopic].about}}</p>
+    </div>
+  </div>
+</div>
