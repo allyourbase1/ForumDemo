@@ -44,14 +44,14 @@ export class UserComponent implements OnInit {
   ngOnInit() {
   }
 
-  mouseEnter(userId: number) {
+  mouseEnter() {
       if (!this.onTopic) {
           clearTimeout(this.timer);
           this.timer = setTimeout(() => this.isOpen = 'active', 200);
       }
   }
 
-  mouseLeave(userId: number) {
+  mouseLeave() {
       //if show animation in progress, kill it
       clearTimeout(this.timer);
       this.timer = setTimeout(() => this.isOpen = 'inactive', 500);
