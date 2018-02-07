@@ -1,9 +1,0 @@
-﻿<div id="userContainer" (mouseenter) = "mouseBack()" (mouseleave) ="mouseLeave()">
-  <span id="userName" (mouseenter) ="mouseEnter(users[selectedUser].id)">{{users[selectedUser].name}}</span>
-  <div id="userPopupContainer" *ngIf="isOpen === 'active'" [@isActive]="isOpen" >
-    <!--popup with user info-->
-    <span id="userName">{{users[selectedUser].name}}</span>
-    <div id="meta">Joined: {{users[selectedUser].createdOn}}</div>
-    <div id="about">About me: {{users[selectedUser].about}}</div>
-  </div>
-</div>
